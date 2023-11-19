@@ -8,7 +8,7 @@ st.set_page_config(layout="wide",
                    page_title='FIFA 2023')
 
 #data preparation
-df_data = pd.read_csv('/Users/vitorfornaro/Desktop/RapidCanvas/data/fifa23_cleaned.csv')
+df_data = pd.read_csv('fifa23_cleaned.csv')
 
 df_data_col_contract_Valid_Until = df_data["Contract Valid Until"].fillna(0).astype(int)
 df_data["Contract Valid Until"] = df_data_col_contract_Valid_Until
@@ -73,4 +73,4 @@ with tab2:
 
 
 
-st.markdown("Developed by [RapidCanvas](https://www.rapidcanvas.ai/) | [Kaggle Dataset](https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database?select=FIFA23_official_data.csv)")
+#st.markdown("Developed by [RapidCanvas](https://www.rapidcanvas.ai/) | [Kaggle Dataset](https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database?select=FIFA23_official_data.csv)")
